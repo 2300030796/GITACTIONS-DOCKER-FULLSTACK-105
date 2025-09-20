@@ -19,11 +19,18 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
     
-    @GetMapping("/")
+     @GetMapping("/")
     public String home() 
     {
-        return "Docker Full Stack Deployment Demo";
+        return "Docker-Backend is Running";
     }
+
+    @GetMapping("/docker")
+    public String docker() 
+    {
+        return "Docker Full Stack Deployment Demo with Git Actions";
+    }
+    
     
 
     @PostMapping("/add")
